@@ -62,6 +62,7 @@ function handleMath(symbol){
 
 function flushOperation(intBuffer){
     if(previousOperator === '+'){
+        //fixed add
         runningTotal += intBuffer;
     }else if(previousOperator === '-'){
         runningTotal -= intBuffer;
